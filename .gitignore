@@ -1,0 +1,12 @@
+.DS_Store
+.openai/
+.env
+.env.*
+node_modules/
+__pycache__/
+*.log
+*.mp4
+*.webm
+*.mp3
+*.zip
+*.tar.gz

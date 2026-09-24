@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="分享与 AI 的日常、经验和方法，求助、出题，也找人一起创作。">
+  <title>来回 · 和 AI 聊过的，来这接着聊</title>
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%2056%2056%22%3E%3Crect%20width%3D%2256%22%20height%3D%2256%22%20rx%3D%2215%22%20fill%3D%22%23ffdb38%22/%3E%3Cg%20transform%3D%22translate%284%202%29%22%3E%3Cpath%20d%3D%22M8%209h24a5%205%200%200%201%205%205v13a5%205%200%200%201-5%205H19l-9%207v-7H8a5%205%200%200%201-5-5V14a5%205%200%200%201%205-5Z%22%20fill%3D%22%23181818%22/%3E%3Cpath%20d%3D%22M21%2018h18a5%205%200%200%201%205%205v11a5%205%200%200%201-5%205h-2v6l-8-6h-8a5%205%200%200%201-5-5V23a5%205%200%200%201%205-5Z%22%20fill%3D%22white%22%20stroke%3D%22%23181818%22%20stroke-width%3D%222.5%22/%3E%3Cpath%20d%3D%22M24%2027h12m-12%205h8%22%20stroke%3D%22%23181818%22%20stroke-width%3D%222.5%22%20stroke-linecap%3D%22round%22/%3E%3C/g%3E%3C/svg%3E">
+  <link rel="stylesheet" href="styles.css">
+  <script defer src="app.js"></script>
+  <script defer src="extensions.js"></script>
+  <link rel="stylesheet" href="theme.css">
+</head>
+<body>
+  <aside class="sidebar">
+    <a class="brand" href="#discover" aria-label="来回首页"><span class="brand-symbol"><svg viewBox="0 0 48 48" fill="none" aria-hidden="true"><path d="M8 9h24a5 5 0 0 1 5 5v13a5 5 0 0 1-5 5H19l-9 7v-7H8a5 5 0 0 1-5-5V14a5 5 0 0 1 5-5Z" fill="#181818"/><path d="M21 18h18a5 5 0 0 1 5 5v11a5 5 0 0 1-5 5h-2v6l-8-6h-8a5 5 0 0 1-5-5V23a5 5 0 0 1 5-5Z" fill="white" stroke="#181818" stroke-width="2.5"/><path d="M24 27h12m-12 5h8" stroke="#181818" stroke-width="2.5" stroke-linecap="round"/></svg></span><span>来回<small>LAIHUI</small></span></a>
+    <nav class="primary-nav" aria-label="主要导航">
+      <button data-nav="discover" class="nav-item active"><span data-icon="compass"></span>发现</button>
+      <button data-nav="together" class="nav-item"><span data-icon="spark"></span>一起做<span class="new-dot"></span></button>
+      <button data-nav="saved" class="nav-item"><span data-icon="bookmark"></span>我的收藏</button>
+      <button data-nav="profile" class="nav-item"><span data-icon="user"></span>我的主页</button>
+    </nav>
+    <button class="publish-btn" data-action="publish"><span data-icon="plus"></span>分享一个经历</button>
+    <div class="sidebar-note"><span class="tiny-kicker">来都来了</span><p>说说你的，<br>也听听别人的。</p><span class="note-line"></span></div>
+    <div class="sidebar-bottom"><span class="demo-label">交互概念 DEMO</span><button data-action="about" class="plain muted">关于这次探索 <span data-icon="arrow"></span></button><button class="user-chip" data-nav="profile"><span class="avatar own">我</span><span>好奇的你<small>刚来，先随便看看</small></span></button></div>
+  </aside>
+  <div class="page-shell">
+    <header class="topbar"><span id="breadcrumb">发现 / 为你推荐</span><label class="search"><span data-icon="search"></span><input id="search" placeholder="搜一个问题、领域或灵感" aria-label="搜索内容"><kbd>⌘ K</kbd></label><button class="mobile-publish icon-btn" data-action="publish" aria-label="发布"><span data-icon="plus"></span></button><span class="top-note">分享 · 求助 · 一起做</span></header>
+    <main id="main"></main>
+  </div>
+  <nav class="mobile-nav" aria-label="移动导航"><button data-nav="discover"><span data-icon="compass"></span>发现</button><button data-nav="together"><span data-icon="spark"></span>一起做</button><button data-nav="saved"><span data-icon="bookmark"></span>收藏</button><button data-nav="profile"><span data-icon="user"></span>我的</button></nav>
+  <dialog id="detail-dialog" class="detail-dialog"><div id="detail-content"></div></dialog>
+  <dialog id="compose-dialog" class="compose-dialog"><div id="compose-content"></div></dialog>
+  <dialog id="small-dialog" class="small-dialog"><div id="small-content"></div></dialog>
+  <dialog id="session-dialog" class="session-dialog"><div id="session-content"></div></dialog>
+  <div id="toast" role="status" aria-live="polite"></div>
+</body>
+</html>
