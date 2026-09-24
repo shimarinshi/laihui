@@ -6,7 +6,17 @@
 
 来回是一个围绕这些经历展开的社区构想。目前做成了一个可以点击、输入、体验完整流程的网页 Demo，想先听听大家觉得有没有用。
 
-**[打开在线 Demo](https://huixiang-dialogue-lab.zhangboyi04.chatgpt.site/)** · [产品想法与后续方向](docs/产品想法.md) · [功能与实现边界](docs/功能说明.md) · [演示讲稿](docs/演示讲稿.md)
+**[▶ 看 B 站视频介绍](https://www.bilibili.com/video/BV1vgaN6XEfk/)** · **[打开在线 Demo](https://huixiang-dialogue-lab.zhangboyi04.chatgpt.site/)**
+
+[产品想法与后续方向](docs/产品想法.md) · [功能与实现边界](docs/功能说明.md) · [演示讲稿](docs/演示讲稿.md)
+
+## 先看视频，听听我为什么想做这个
+
+**[《与其让AI平台白拿你的对话，不如一起分享出来！因此我做了一个APP的demo......》](https://www.bilibili.com/video/BV1vgaN6XEfk/)**
+
+我把这个想法和 Demo 的实际操作录成了视频：为什么想让大家自己决定怎么分享对话，以后教程会不会变成和 Agent 解决问题的交互记录，以及这些记录怎么拿来学习、求助和一起创作。
+
+看完也想听听你的想法：你愿意分享哪一段对话？最想看看谁是怎么用 AI 的？欢迎在 B 站评论区聊，也可以在 [GitHub Issues](https://github.com/shimarinshi/laihui/issues) 提建议。觉得有意思的话，可以给仓库点个 Star，或者把视频转给可能感兴趣的朋友。
 
 > 当前是纯前端概念原型。没有真实模型、用户系统、多人同步、支付或长期存储。页面中的人物、对话、作品和热度都是演示样例；刷新会清除本次操作。
 
